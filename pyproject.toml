@@ -1,0 +1,22 @@
+[project]
+name = "driving_statistics"
+version = "0.1.0"
+description = "App para estadísticas de exámenes de conducción, para interfaces"
+authors = [{ name="Juan David y Lucas Carrasqueira" }]
+dependencies = [
+    "PyQt6",
+    "pandas"
+]
+
+[project.scripts]
+driving_statistics = "driving_statistics.main:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
